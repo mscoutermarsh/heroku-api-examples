@@ -1,5 +1,12 @@
 require 'platform-api'
 require 'pry-byebug'
+require 'httplog'
+
+# display HTTP requests made by PlatformAPI
+HttpLog.options[:log_response] = false
+HttpLog.options[:log_headers] = true
+HttpLog.options[:log_connect] = false
+HttpLog.options[:logger] = Logger.new($stdout)
 
 # To get your API token, run:
 #     $ heroku auth:token

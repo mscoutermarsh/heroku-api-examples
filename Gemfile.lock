@@ -15,6 +15,7 @@ GEM
       moneta
       multi_json (>= 1.9.2)
       netrc
+    httplog (0.2.7)
     method_source (0.8.2)
     moneta (0.8.0)
     multi_json (1.10.1)
@@ -34,5 +35,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  httplog
   platform-api
   pry-byebug
