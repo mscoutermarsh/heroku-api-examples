@@ -2,6 +2,9 @@ require 'platform-api'
 require 'pry-byebug'
 require 'httplog'
 
+# do not page long results
+Pry.config.pager = false
+
 # display HTTP requests made by PlatformAPI
 HttpLog.options[:log_response] = false
 HttpLog.options[:log_headers] = true
